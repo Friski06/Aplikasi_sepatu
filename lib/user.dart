@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:halaman_login/barang/home_screen.dart';
 import 'package:halaman_login/main.dart';
 import 'header.dart';
 
@@ -15,7 +16,7 @@ class _UserState extends State<User> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.cyan,
         title: const Text("Menu Utama..."),
       ),
       //menu bar
@@ -57,168 +58,204 @@ class _UserState extends State<User> {
         ),
       ),
       body: GridView.count(
-        padding: const EdgeInsets.all(25),
+        padding: const EdgeInsets.all(2.5),
         crossAxisCount: 2,
         children: <Widget>[
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
-              splashColor: Colors.blue,
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen()));
+              },
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.home,
-                      size: 70,
-                      color: Colors.blueAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset("assets/images/sneakers.jpg")),
+                    const Text(
+                      "Snekers",
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    Text("Sneakers", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.new_releases,
-                      size: 70,
-                      color: Colors.redAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(20.0),
+                        child: Image.asset("assets/images/wedges.jpg")),
+                    const Text(
+                      "Wedges",
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    Text("Wedges", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.military_tech,
-                      size: 70,
-                      color: Colors.greenAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Image.asset("assets/images/peep to heels.jpg")),
+                    const Text(
+                      "Heels",
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    Text("Peep Toe Heels", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.android,
-                      size: 70,
-                      color: Colors.blueGrey,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Image.asset("assets/images/flatshoes.jpg")),
+                    const Text(
+                      "Flat Shoes",
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    Text("Flat Shoes", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.home,
-                      size: 70,
-                      color: Colors.blueAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child:
+                            Image.asset("assets/images/ballerina flats.jpg")),
+                    const Text(
+                      "Balleria",
+                      style: TextStyle(fontSize: 19.0),
                     ),
-                    Text("Ballerina Flats", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.home,
-                      size: 70,
-                      color: Colors.blueAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Image.asset("assets/images/loafers.png")),
+                    const Text(
+                      "Loafers",
+                      style: TextStyle(fontSize: 19.0),
                     ),
-                    Text("Loafers", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.home,
-                      size: 70,
-                      color: Colors.blueAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Image.asset("assets/images/boots.jpg")),
+                    const Text(
+                      "Boots",
+                      style: TextStyle(fontSize: 19.0),
                     ),
-                    Text("Boots", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10, right: 10.0, top: 5.0),
           ),
           Card(
-            margin: const EdgeInsets.all(8),
+            elevation: 15,
+            shape:
+                RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
               onTap: () {},
-              splashColor: Colors.blue,
+              splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
-                  children: const <Widget>[
-                    Icon(
-                      Icons.home,
-                      size: 70,
-                      color: Colors.blueAccent,
+                  children: <Widget>[
+                    ClipRRect(
+                        borderRadius: BorderRadius.circular(50.0),
+                        child: Image.asset("assets/images/dearny shoes.jpg")),
+                    const Text(
+                      "Dearny",
+                      style: TextStyle(fontSize: 20.0),
                     ),
-                    Text("Derby Shoes", style: TextStyle(fontSize: 17.0)),
                   ],
                 ),
               ),
             ),
+            margin: const EdgeInsets.only(left: 10.0, right: 10.0, top: 5.0),
           ),
           const SizedBox(height: 16),
         ],

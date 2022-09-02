@@ -34,7 +34,7 @@ class _LoginState extends State<Login> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   TextEditingController usernameInput = new TextEditingController();
   TextEditingController passwordInput = new TextEditingController();
-  final String sUrl = "http://192.168.43.24/assets/login/login.php";
+  final String sUrl = "http://192.168.100.3/assets/login/login.php";
   //final response = await http.get(Url);
 
   void loginProcess() async {

@@ -11,7 +11,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue[600],
+      color: Colors.cyan[600],
       width: double.infinity,
       height: 200,
       padding: const EdgeInsets.only(top: 20.0),
@@ -33,7 +33,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           const Text(
-            "Menu, Aktual dan Terpercaya",
+            "Cepat dan Terpercaya",
             style: TextStyle(color: Colors.white, fontSize: 14),
           ),
         ],

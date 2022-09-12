@@ -1,9 +1,11 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:halaman_login/barang/components/details/detail_screen.dart';
 import 'package:halaman_login/barang/prodak.dart';
 import 'package:halaman_login/constans.dart';
-
+import '../components/body.dart';
 import 'catagories.dart';
+import 'item_card.dart';
 
 class Body extends StatelessWidget {
   @override
@@ -38,52 +40,14 @@ class Body extends StatelessWidget {
                 press: () => Navigator.push(
                   context,
                   MaterialPageRoute(
-                    builder: (context) => Body(),
+                    builder: (context) => DetailsScreen(
+                      product: products[index],
+                    ),
                   ),
                 ),
               ),
             ),
           ),
-        )
-      ],
-    );
-  }
-}
-
-class itemCard extends StatelessWidget {
-  final Product product;
-  final Function press;
-  const itemCard({
-    Key? key,
-    required this.product,
-    required this.press,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        Container(
-          padding: EdgeInsets.all(kDefaultPaddin),
-          // height: 180,
-          //width: 160,
-          decoration: BoxDecoration(
-            color: products[0].color,
-            borderRadius: BorderRadius.circular(16),
-          ),
-          child: Image.asset(products[0].image),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
-          child: Text(
-            products[0].title,
-            style: TextStyle(color: kTextColor),
-          ),
-        ),
-        Text(
-          "\Rp1234",
-          style: TextStyle(fontWeight: FontWeight.bold),
         )
       ],
     );

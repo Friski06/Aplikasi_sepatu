@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:halaman_login/barang/home_screen.dart';
+import 'package:halaman_login/barang2/home_screen.dart';
+import 'package:halaman_login/barang3/home_screen.dart';
+import 'package:halaman_login/barang4/home_screen.dart';
+import 'package:halaman_login/barang5/home_screen.dart';
+import 'package:halaman_login/barang6/home_screen.dart';
 import 'package:halaman_login/main.dart';
 import 'header.dart';
 
@@ -93,7 +98,10 @@ class _UserState extends State<User> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen2()));
+              },
               splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
@@ -101,7 +109,7 @@ class _UserState extends State<User> {
                   children: <Widget>[
                     ClipRRect(
                         borderRadius: BorderRadius.circular(20.0),
-                        child: Image.asset("assets/images/wedges.jpg")),
+                        child: Image.asset("assets/images/wedges.png")),
                     const Text(
                       "Wedges",
                       style: TextStyle(fontSize: 20.0),
@@ -117,7 +125,10 @@ class _UserState extends State<User> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen3()));
+              },
               splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
@@ -141,7 +152,10 @@ class _UserState extends State<User> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen4()));
+              },
               splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
@@ -165,7 +179,10 @@ class _UserState extends State<User> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen5()));
+              },
               splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
@@ -190,7 +207,10 @@ class _UserState extends State<User> {
             shape:
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: InkWell(
-              onTap: () {},
+              onTap: () {
+                Navigator.of(context).pushReplacement(
+                    MaterialPageRoute(builder: (context) => HomeScreen6()));
+              },
               splashColor: Colors.blueAccent,
               child: Center(
                 child: Column(
@@ -221,8 +241,9 @@ class _UserState extends State<User> {
                   mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
                     ClipRRect(
-                        borderRadius: BorderRadius.circular(50.0),
-                        child: Image.asset("assets/images/boots.jpg")),
+                      borderRadius: BorderRadius.circular(50.0),
+                      child: Image.asset("assets/images/boots.jpg"),
+                    ),
                     const Text(
                       "Boots",
                       style: TextStyle(fontSize: 19.0),
@@ -246,7 +267,7 @@ class _UserState extends State<User> {
                   children: <Widget>[
                     ClipRRect(
                         borderRadius: BorderRadius.circular(50.0),
-                        child: Image.asset("assets/images/dearny shoes.jpg")),
+                        child: Image.asset("assets/images/dearny.jpg")),
                     const Text(
                       "Dearny",
                       style: TextStyle(fontSize: 20.0),
